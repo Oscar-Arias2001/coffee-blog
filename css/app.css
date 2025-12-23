@@ -81,7 +81,7 @@ h4 {
 	font-size: 2.8rem;
 }
 
-/** General Styles **/
+/** Website General Styles **/
 img {
 	display: block;
 	max-width: var(--full);
@@ -92,23 +92,13 @@ img {
 	margin-inline: auto;
 }
 
-.button,
-.field {
+.button {
 	margin-block-end: 2rem;
-}
-
-.full-axis {
-	width: var(--full);
-	height: var(--full);
-}
-
-.object-img {
-	object-fit: cover;
-	object-position: center;
 }
 
 .button {
 	display: block;
+	cursor: pointer;
 	color: var(--white);
 	background-color: var(--black);
 	font-size: 1.8rem;
@@ -122,7 +112,45 @@ img {
 	background-color: var(--primary);
 }
 
+.full-axis {
+	width: var(--full);
+	height: var(--full);
+}
+
+.object-img {
+	object-fit: cover;
+	object-position: center;
+}
+
+.flex-row-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.widget__price,
+.widget__students,
+.course__price,
+.course__students {
+	font-size: 2rem;
+}
+
+.entry,
+.widget,
+.course {
+	border-block-end: 0.1rem solid var(--light-gray);
+}
+
+:is(.entry, .widget, .course):last-child {
+	border-block-end: none;
+}
+
+:is(.post__paragraph, .form__button):last-of-type {
+	margin-block-end: 0;
+}
+
 @media (hover: hover) {
+	/** Website General Styles **/
 	.button:hover {
 		background-color: transparent;
 		color: var(--black);
@@ -134,37 +162,10 @@ img {
 }
 
 @media (width >= 480px) {
+	/** Website General Styles **/
 	.button {
 		display: inline-block;
 	}
-}
-
-.flex-row-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-:is(.post__paragraph, .entry, .widget, .field, .form__button):last-of-type {
-	margin-block-end: 0;
-}
-
-.entry,
-.widget,
-.course {
-	border-block-end: 0.1rem solid var(--light-gray);
-	margin-block-end: 2rem;
-}
-
-:is(.entry, .widget, .course):last-child {
-	border-block-end: none;
-}
-
-.widget__price,
-.widget__students,
-.course__price,
-.course__students {
-	font-size: 2rem;
 }
 
 /** Utility First **/
@@ -200,6 +201,10 @@ img {
 	margin-block-end: 1.5rem;
 }
 
+.mbe-20 {
+	margin-block-end: 2rem;
+}
+
 .mbe-0 {
 	margin-block-end: 0;
 }
@@ -208,37 +213,25 @@ img {
 	display: block;
 }
 
+.d-flex {
+	display: flex;
+}
+
 /** Header Section **/
-.webp .header--home {
+.webp .header--first {
 	background: url(../img/banner1.webp) no-repeat;
 }
 
-.no-webp .header--home {
+.no-webp .header--first {
 	background: url(../img/banner1.jpg) no-repeat;
 }
 
-.webp .header--about {
+.webp .header--second {
 	background: url(../img/banner2.webp) no-repeat;
 }
 
-.no-webp .header--about {
+.no-webp .header--second {
 	background: url(../img/banner2.jpg) no-repeat;
-}
-
-.webp .header--courses {
-	background: url(../img/banner3.webp) no-repeat;
-}
-
-.no-webp .header--courses {
-	background: url(../img/banner3.jpg) no-repeat;
-}
-
-.webp .header--contact {
-	background: url(../img/banner4.webp) no-repeat;
-}
-
-.no-webp .header--contact {
-	background: url(../img/banner4.jpg) no-repeat;
 }
 
 :is(.webp, .no-webp) .header {
@@ -373,7 +366,6 @@ img {
 
 /** Gallery Section **/
 .gallery {
-	display: flex;
 	flex-direction: column-reverse;
 }
 
@@ -493,7 +485,6 @@ img {
 }
 
 .field {
-	display: flex;
 	flex-direction: column;
 }
 
@@ -508,10 +499,6 @@ img {
 
 .field__input--textarea {
 	height: 20rem;
-}
-
-.form__button {
-	cursor: pointer;
 }
 
 @media (width >= 480px) {
