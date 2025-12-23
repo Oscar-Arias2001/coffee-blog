@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="robots" content="index, follow" />
+		<meta
+			name="description"
+			content="At Coffee Blog, we believe coffee is more than just a drink. Here, you'll find simple brewing guides, helpful tips, recipes, and personal stories from fellow coffee lovers."
+		/>
+		<meta
+			name="keywords"
+			content="coffee, coffee blog, coffee courses, coffee recipes"
+		/>
+		<meta name="author" content="Oscar Arias" />
+		<title>Coffee Blog - Contact</title>
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="../img/favicon-96x96.png"
+			sizes="96x96"
+		/>
+		<link rel="icon" type="image/svg+xml" href="../img/favicon.svg" />
+		<link rel="shortcut icon" href="../img/favicon.ico" />
+
+		<!-- Website Prefetch -->
+		<link rel="prefetch" href="../index.html" as="document" />
+
+		<!-- Normalize CSS Reset -->
+		<link rel="preload" href="../css/normalize.css" as="style" />
+		<link rel="stylesheet" href="../css/normalize.css" />
+
+		<!-- Google Website Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- CSS Styles -->
+		<link rel="preload" href="../css/app.css" as="style" />
+		<link rel="stylesheet" href="../css/app.css" />
+	</head>
+	<body>
+		<!-- Header Section Starts -->
+		<header class="header header--contact c-fff">
+			<!-- Header Container Starts -->
+			<div class="header__container">
+				<!-- Bar Starts -->
+				<div class="bar">
+					<!-- Bar Logo Starts -->
+					<div class="bar__logo">
+						<a class="bar__link" href="../index.html">
+							<!-- Bar Name Starts -->
+							<h1 class="bar__name flex-row-center">
+								Coffee<span class="bar__bold fw-700">Blog</span
+								><span class="bar__icon" aria-hidden="true"
+									><svg
+										class="d-block"
+										xmlns="http://www.w3.org/2000/svg"
+										width="46"
+										height="46"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="#ffffff"
+										stroke-width="2.25"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+										/>
+										<path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+										<path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+										<path
+											d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z"
+										/>
+										<path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+									</svg>
+								</span>
+							</h1>
+							<!-- Bar Name Ends -->
+						</a>
+					</div>
+					<!-- Bar Logo Ends -->
+
+					<!-- Navigation Starts -->
+					<nav class="navigation">
+						<a
+							href="../pages/about.html"
+							class="navigation__link d-block text-center"
+							>About Us</a
+						>
+						<a
+							href="../pages/courses.html"
+							class="navigation__link d-block text-center"
+							>Courses</a
+						>
+						<a
+							href="../pages/contact.html"
+							class="navigation__link d-block text-center"
+							>Contact</a
+						>
+					</nav>
+					<!-- Navigation Ends -->
+				</div>
+				<!-- Bar Ends -->
+
+				<!-- Header Text Starts -->
+				<section class="header__content text-center">
+					<h2 class="header__title">Coffee blog with tips and courses</h2>
+
+					<p class="header__text">
+						Learn from the experts with the best recipes and tips
+					</p>
+				</section>
+				<!-- Header Text Ends -->
+			</div>
+			<!-- Header Container Ends -->
+
+			<!-- Coffeeine logo Starts -->
+			<div class="coffeeine">
+				<img src="../img/coffeeine.png" alt="Coffeeine cafe logo" width="200" />
+			</div>
+			<!-- Coffeeine logo Ends -->
+		</header>
+		<!-- Header Section Ends -->
+
+		<!-- Contact Section Starts -->
+		<main class="contact mbs-30">
+			<h2 class="contact__title text-center mbe-30">Contact</h2>
+
+			<!-- Contact Container Starts -->
+			<div class="contact__container">
+				<!-- Contact Bg Starts -->
+				<div class="contact__bg"></div>
+				<!-- Contact Bg Ends -->
+
+				<!-- Contact Form Starts -->
+				<form
+					class="form"
+					action="#"
+					method="get"
+					autocomplete="on"
+					accept-charset="UTF-8"
+				>
+					<!-- Form Fieldset Starts -->
+					<fieldset class="form__fieldset">
+						<div class="field">
+							<label class="field__label" for="fullname">Full Name</label>
+
+							<input
+								class="field__input"
+								type="text"
+								placeholder="Your Full Name"
+								id="fullname"
+								name="fullname"
+								spellcheck="true"
+								autocomplete="name"
+								pattern="^[A-Za-zÀ-ÿ\s\'\-]{2,40}$"
+								minlength="2"
+								maxlength="40"
+								title="Please the field must not contain numbers and the valid amount of characters is between 2 and 40."
+								required
+							/>
+						</div>
+
+						<div class="field">
+							<label class="field__label" for="email">E-mail</label>
+
+							<input
+								class="field__input"
+								type="email"
+								placeholder="Your E-mail"
+								name="email"
+								id="email"
+								pattern="^[a-zA-Z0-9\.\_\%\+\-]+@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,}$"
+								autocomplete="email"
+								required
+							/>
+						</div>
+
+						<div class="field">
+							<label class="field__label" for="message">Message</label>
+
+							<textarea
+								class="field__input field__input--textarea"
+								name="message"
+								id="message"
+							></textarea>
+						</div>
+
+						<div class="field">
+							<button class="form__button button fw-700" type="submit">
+								Send
+							</button>
+						</div>
+					</fieldset>
+					<!-- Form Fieldset Ends -->
+				</form>
+				<!-- Contact Form Ends -->
+			</div>
+			<!-- Contact Container Ends -->
+		</main>
+		<!-- Contact Section Ends -->
+
+		<!-- Footer Section Starts -->
+		<footer class="footer mbs-30 c-fff">
+			<div class="footer__container">
+				<!-- Bar Starts -->
+				<div class="bar">
+					<!-- Bar Logo Starts -->
+					<div class="bar__logo">
+						<a class="bar__link" href="../index.html">
+							<!-- Bar Name Starts -->
+							<h1 class="bar__name flex-row-center">
+								Coffee<span class="bar__bold fw-700">Blog</span
+								><span class="bar__icon" aria-hidden="true"
+									><svg
+										class="d-block"
+										xmlns="http://www.w3.org/2000/svg"
+										width="46"
+										height="46"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="#ffffff"
+										stroke-width="2.25"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M3 14c.83 .642 2.077 1.017 3.5 1c1.423 .017 2.67 -.358 3.5 -1c.83 -.642 2.077 -1.017 3.5 -1c1.423 -.017 2.67 .358 3.5 1"
+										/>
+										<path d="M8 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+										<path d="M12 3a2.4 2.4 0 0 0 -1 2a2.4 2.4 0 0 0 1 2" />
+										<path
+											d="M3 10h14v5a6 6 0 0 1 -6 6h-2a6 6 0 0 1 -6 -6v-5z"
+										/>
+										<path d="M16.746 16.726a3 3 0 1 0 .252 -5.555" />
+									</svg>
+								</span>
+							</h1>
+							<!-- Bar Name Ends -->
+						</a>
+					</div>
+					<!-- Bar Logo Ends -->
+
+					<!-- Navigation Starts -->
+					<nav class="navigation">
+						<a
+							href="../pages/about.html"
+							class="navigation__link d-block text-center"
+							>About Us</a
+						>
+						<a
+							href="../pages/courses.html"
+							class="navigation__link d-block text-center"
+							>Courses</a
+						>
+						<a
+							href="../pages/contact.html"
+							class="navigation__link d-block text-center"
+							>Contact</a
+						>
+					</nav>
+					<!-- Navigation Ends -->
+				</div>
+				<!-- Bar Ends -->
+			</div>
+		</footer>
+		<!-- Footer Section Ends -->
+
+		<!-- Modernizr Webp Script Starts -->
+		<script src="../scripts/modernizr.js" defer></script>
+		<!-- Modernizr Webp Script Ends -->
+	</body>
+</html>
